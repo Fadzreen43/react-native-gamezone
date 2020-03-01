@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import * as Font from 'expo-font'; //https://docs.expo.io/versions/latest/guides/using-custom-fonts/ && google fonts
 import Home from './screens/home';
 import { AppLoading } from 'expo';
+import Navigator from './routes/homeStack'
 
 const getFonts = () => Font.loadAsync({
     'nunito-regular': require('./assets/fonts/Nunito-Regular.ttf'),
@@ -13,7 +14,7 @@ const [fontsLoaded, setFontsLoaded] = useState(false);
 
   if(fontsLoaded){
     return (
-      <Home />
+      <Navigator />
     );
   } else {
     return(

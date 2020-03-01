@@ -7,5 +7,5 @@ export default function Home(){
         <View style={globalStyles.container}> 
             <Text style = {globalStyles.titleText}>Home Screen</Text>
         </View>
-    )
+    );
 }
